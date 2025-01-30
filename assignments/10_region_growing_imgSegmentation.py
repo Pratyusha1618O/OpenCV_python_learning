@@ -9,25 +9,21 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Step 1: Load the grayscale image
-image = cv2.imread('flower2.jpg', cv2.IMREAD_GRAYSCALE)
+image = cv2.imread('box.jpg',0)
 
-# Step 2: Region-growing function
+# Region-growing function
 def region_growing(image, seed, threshold=15):
-    # Initialize variables
     rows, cols = image.shape
-    segmented = np.zeros_like(image)  # Binary segmented image
-    visited = np.zeros_like(image, dtype=bool)  # To keep track of visited pixels
+    segmented = np.zeros_like(image)  
+    visited = np.zeros_like(image, dtype=bool)  
     
-    # Define the 4-connected neighbors (up, down, left, right)
     neighbors = [(-1, 0), (1, 0), (0, -1), (0, 1)]
     
-    # Initialize the seed point
+    #seed point
     seed_value = image[seed]
-    segmented[seed] = 255  # Mark the seed as part of the region
+    segmented[seed] = 255 
     visited[seed] = True
     
-    # List to store the pixels to check
     to_check = [seed]
     
     # Region-growing process
@@ -38,25 +34,24 @@ def region_growing(image, seed, threshold=15):
         for dx, dy in neighbors:
             nx, ny = x + dx, y + dy
             if 0 <= nx < rows and 0 <= ny < cols and not visited[nx, ny]:
-                # If the intensity difference is within the threshold, grow the region
                 if abs(int(image[nx, ny]) - int(seed_value)) < threshold:
-                    segmented[nx, ny] = 255  # Add to the region
-                    visited[nx, ny] = True  # Mark as visited
-                    to_check.append((nx, ny))  # Add to the list of pixels to check
+                    segmented[nx, ny] = 255 
+                    visited[nx, ny] = True 
+                    to_check.append((nx, ny))  
     
     return segmented
 
-# Step 3: Select a seed point (you can choose any point in the image)
-seed_point = (100, 100)  # Example seed point; you can change this as needed
+# Select a seed point
+seed_point = (100, 100)
 
-# Step 4: Apply the region-growing algorithm
+# region-growing algorithm
 segmented_image = region_growing(image, seed_point, threshold=15)
 
-# Step 5: Highlight the segmented region on the original image (optional)
-highlighted_image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)  # Convert to BGR to overlay
+
+highlighted_image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)  
 highlighted_image[segmented_image == 255] = [0, 0, 255]  # Highlight region in red
 
-# Step 6: Display the original and segmented images
+# Display
 plt.figure(figsize=(12, 6))
 
 # Original Image
@@ -67,9 +62,12 @@ plt.axis('off')
 
 # Segmented Image
 plt.subplot(1, 2, 2)
-plt.imshow(cv2.cvtColor(highlighted_image, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB for display
+plt.imshow(cv2.cvtColor(highlighted_image, cv2.COLOR_BGR2RGB)) 
 plt.title('Segmented Image (Region Growing)')
 plt.axis('off')
 
 plt.tight_layout()
 plt.show()
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
