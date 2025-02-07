@@ -12,9 +12,9 @@ import matplotlib.pyplot as plt
 image = cv2.imread('flower.jpg', cv2.IMREAD_GRAYSCALE)
 
 #2. Apply the Sobel filter
-sobel_x = cv2.Sobel(image, cv2.CV_64F, 1, 0, ksize=3)
-sobel_y = cv2.Sobel(image, cv2.CV_64F, 0, 1, ksize=3)
-sobel_edges = cv2.magnitude(sobel_x, sobel_y)
+sobel_x = cv2.Sobel(image, cv2.CV_64F, 1, 0, ksize=3) # Sobel in x-direction
+sobel_y = cv2.Sobel(image, cv2.CV_64F, 0, 1, ksize=3) # Sobel in y-direction
+sobel_edges = cv2.magnitude(sobel_x, sobel_y)  # Combine both directions
 
 #3: Apply the Prewitt filter 
 prewitt_kernel_x = np.array([[1,  1,  1],
@@ -25,6 +25,7 @@ prewitt_kernel_y = np.array([[1,  0, -1],
                              [1,  0, -1],
                              [1,  0, -1]])
 
+# Convolve the image with Prewitt kernels using filter2D
 prewitt_x = cv2.filter2D(image, cv2.CV_64F, prewitt_kernel_x)
 prewitt_y = cv2.filter2D(image, cv2.CV_64F, prewitt_kernel_y)
 prewitt_edges = cv2.magnitude(prewitt_x, prewitt_y)

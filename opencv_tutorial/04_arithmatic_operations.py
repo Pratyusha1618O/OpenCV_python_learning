@@ -8,6 +8,7 @@ print(img.dtype) # datatype # uint8
 b,g,r = cv2.split(img)
 img = cv2.merge((b,g,r))
 
+# cv2.selectROI("select the area", img)
 ball = img[280:340, 330:390]
 img[273:333, 100:160] = ball
 
