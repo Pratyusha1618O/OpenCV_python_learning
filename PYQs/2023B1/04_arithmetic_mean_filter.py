@@ -14,7 +14,7 @@ if image is None:
 
 # Add Gaussian noise
 mean = 0 # mean of gaussian noise
-sigma = 25 #standard daviation (controls noise level)
+sigma = 25 #standard daviation (adjust noise level)
 noise = np.random.normal(mean, sigma, image.shape) # generate noise
 noisy_img = image + noise # add vnoise to image
 noisy_img = np.clip(noisy_img, 0, 255) # keep pixel value in range 0-255
