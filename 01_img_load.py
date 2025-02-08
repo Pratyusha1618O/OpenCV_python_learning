@@ -2,7 +2,7 @@ import cv2
 print(cv2.__version__)
 
 #coloured image
-# img = cv2.imread('jjk.jpg',0)
+img = cv2.imread('jjk.jpg',0)
 img = cv2.imread('jjk.jpg',1)
 
 resize_img = cv2.resize(img,(600,400))
