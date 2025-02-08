@@ -26,7 +26,6 @@ prewitt_kernel_y = np.array([[1,  1,  1],
                              [0,  0,  0],
                              [-1, -1, -1]])
 
-
 # Convolve the image with Prewitt kernels using filter2D
 prewitt_x = cv2.filter2D(image, cv2.CV_64F, prewitt_kernel_x)
 prewitt_y = cv2.filter2D(image, cv2.CV_64F, prewitt_kernel_y)
