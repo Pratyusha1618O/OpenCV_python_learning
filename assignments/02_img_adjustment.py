@@ -1,3 +1,13 @@
+#  Apply basic image enhancement techniques like contrast 
+# stretching and histogram processing.  
+# Problem:
+  
+# 1.  Load an image using OpenCV. 
+# 2. Apply contrast stretching to improve the image brightness and contrast.  
+# 3. Perform histogram equalization to enhance the image details.  
+# 4. Display the original image, histogram of the original image, and the 
+# enhanced image with its histogram.
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
