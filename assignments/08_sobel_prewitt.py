@@ -16,6 +16,7 @@ sobel_x = cv2.Sobel(image, cv2.CV_64F, 1, 0, ksize=3) # Sobel in x-direction
 sobel_y = cv2.Sobel(image, cv2.CV_64F, 0, 1, ksize=3) # Sobel in y-direction
 sobel_edges = cv2.magnitude(sobel_x, sobel_y)  # Combine both directions
 
+
 #3: Apply the Prewitt filter 
 prewitt_kernel_x = np.array([[1,  1,  1],
                              [0,  0,  0],

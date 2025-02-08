@@ -27,6 +27,7 @@ def plot_histogram(image, title):
     plt.xlabel('Pixel Intensity')
     plt.ylabel('Frequency')
 
+
 # Load the image in grayscale
 image = cv2.imread("flower.jpg", cv2.IMREAD_GRAYSCALE)
 
