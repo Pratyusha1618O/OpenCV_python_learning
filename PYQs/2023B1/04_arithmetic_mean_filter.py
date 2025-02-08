@@ -20,7 +20,6 @@ noisy_img = image + noise # add vnoise to image
 noisy_img = np.clip(noisy_img, 0, 255) # keep pixel value in range 0-255
 noisy_img = np.uint8(noisy_img) # conver to int type
 
-
 ## Apply Arithmetic Mean filter
 kernel_size = (3, 3) # 3X3 matrix
 denoised_img = cv2.blur(noisy_img, kernel_size)
