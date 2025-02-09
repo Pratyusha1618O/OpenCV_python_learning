@@ -12,6 +12,7 @@ rotated_img_clock = cv2.warpAffine(image, rotation_45_clock, (image.shape[1], im
 
 rotate_img_anticlock = cv2.warpAffine(image, rotation_45_anticlock, (image.shape[1], image.shape[0]))
 
+
 plt.figure(figsize=(10, 5))
 
 plt.subplot(1,3,1)
