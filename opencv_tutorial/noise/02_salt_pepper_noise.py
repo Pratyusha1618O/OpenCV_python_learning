@@ -26,6 +26,7 @@ for i in range(pepper):
     j = random.randint(0, image.shape[1]-1)
     noisy_img[i][j] = 0 # set pixel to black
 
+
 cv2.imshow("Original image", image)
 cv2.imshow("Salt pepper noise added", noisy_img)
 

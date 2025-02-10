@@ -6,5 +6,6 @@ cv2.imshow('Original Image', img)
 
 cv2.imshow('Blur Image', gaussian_blur)
 
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
