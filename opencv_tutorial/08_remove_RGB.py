@@ -5,6 +5,7 @@ if image is None:
     print("Error: Could not read the image.")
     exit()
 
+
 # Remove colors by setting channels to 0
 no_red = image.copy()
 no_red[:, :, 2] = 0  # Remove Red
