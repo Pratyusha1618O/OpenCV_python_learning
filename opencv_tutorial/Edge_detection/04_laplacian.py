@@ -9,6 +9,7 @@ laplacian = np.uint8(np.abs(laplacian))
 
 plt.figure(figsize=(10, 5))
 
+
 plt.subplot(1,2,1)
 plt.title("Original")
 plt.imshow(image, cmap='gray')
