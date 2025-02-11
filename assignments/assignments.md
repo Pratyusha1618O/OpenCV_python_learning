@@ -1,6 +1,13 @@
-**Assignment 2: Image Enhancement in the Spatial Domain** 
+# Assignment 1: Draw Shapes
+**Problem:** 
+1. Take user input to create a canvas. 
+2. Then draw a line, take corner points of rectangle and draw a rectangle.
+3. Take radius and center point and draw a circle.
+4. Add text to the canvas 
 
-**Description:** Apply basic image enhancement techniques like contrast stretching and histogram processing. 
+# Assignment 2: Image Enhancement in the Spatial Domain 
+
+### **Description:** Apply basic image enhancement techniques like contrast stretching and histogram processing. 
 
 **Problem:** 
 
@@ -9,9 +16,10 @@
 3. Perform histogram equalization to enhance the image details.   
 4. Display the original image, histogram of the original image, and the enhanced image with its histogram.
 
-**Assignment 3:** Noise Smoothing and Image Sharpening
 
-**Description:** Understand and apply noise smoothing and sharpening techniques. 
+# Assignment 3: Noise Smoothing and Image Sharpening
+
+### **Description:** Understand and apply noise smoothing and sharpening techniques. 
 
 **Problem:** 
 
@@ -19,17 +27,17 @@
 2. Sharpen the image using a Laplacian filter.  
 3. Compare and display the results of smoothing and sharpening techniques.
 
-**Assignment 4:** Pixel Classification and Color Conversion 
+# Assignment 4: Pixel Classification and Color Conversion 
 
-**Description:** Classify pixels and work with RGB and grayscale images. Problem: 
+### **Description:** Classify pixels and work with RGB and grayscale images. Problem: 
 
 1. Load an RGB image and convert it to a grayscale image using OpenCV.   
 2. Perform pixel classification by thresholding (e.g., segment bright areas of the image).   
 3. Highlight the classified regions in the original RGB image using a different color. 4\. Display the original RGB image, grayscale image, and the classified image
 
-**Assignment 5:** Geometric Transformations and Hough Transform 
+# Assignment 5: Geometric Transformations and Hough Transform 
 
-**Description:** Apply geometric transformations and detect shapes using the Hough transform. 
+### **Description:** Apply geometric transformations and detect shapes using the Hough transform. 
 
 **Problem:**
 
@@ -40,9 +48,9 @@
 2. Apply the Hough Line Transform to detect lines in the image.  
 3.  Draw the detected lines on the original image and display it. 
 
-**Assignment 6:** Filtering and Edge Detection 
+# Assignment 6: Filtering and Edge Detection 
 
-**Description:** Understand and implement spatial domain filters for edge detection. 
+### **Description:** Understand and implement spatial domain filters for edge detection. 
 
 **Problem:** 
 
@@ -52,9 +60,9 @@
    * Canny edge detector.   
 3. Compare and display the original image and the results from each edge detection filter.
 
-**Assignment 7:** Thresholding Techniques in Image Processing
+# Assignment 7: Thresholding Techniques in Image Processing
 
-**Description:** Apply various thresholding techniques for image segmentation.  
+### **Description:** Apply various thresholding techniques for image segmentation.  
 **Problem:**
 
 1. Load a grayscale image using OpenCV.
@@ -65,9 +73,9 @@
 
 4. Display the original image and the thresholded images obtained using global and adaptive thresholding.
 
-**Assignment 8: Edge Detection Using Sobel and Prewitt Filters**
+# Assignment 8: Edge Detection Using Sobel and Prewitt Filters
 
-**Description:** Understand and apply edge detection using Sobel and Prewitt filters.  
+### **Description:** Understand and apply edge detection using Sobel and Prewitt filters.  
 **Problem:**
 
 1. Load an image using OpenCV.  
@@ -75,9 +83,9 @@
 3. Apply the Prewitt filter to detect edges in the image.  
 4. Display the original image and the results of edge detection using both filters.
 
-**Assignment 9: Image Sharpening Using High-Pass Filters**
+# Assignment 9: Image Sharpening Using High-Pass Filters
 
-**Description:** Apply sharpening techniques using high-pass filters.  
+### **Description:** Apply sharpening techniques using high-pass filters.  
 **Problem:**
 
 1. Load an image using OpenCV.  
@@ -85,9 +93,9 @@
 3. Apply the filter to sharpen the image.  
 4. Display the original image and the sharpened image to compare the results.
 
-**Assignment 10: Region Growing for Image Segmentation**
+# Assignment 10: Region Growing for Image Segmentation
 
-**Description:** Use region-growing techniques for image segmentation.  
+### **Description:** Use region-growing techniques for image segmentation.  
 **Problem:**
 
 1. Load a grayscale image using OpenCV.  
@@ -95,9 +103,9 @@
 3. Highlight the segmented regions on the original image.  
 4. Display the original image and the segmented image.
 
-**Assignment 11: Fourier Transform for Image Enhancement**
+# Assignment 11: Fourier Transform for Image Enhancement
 
-**Description:** Apply Fourier Transform for image filtering and enhancement.  
+### **Description:** Apply Fourier Transform for image filtering and enhancement.  
 **Problem:**
 
 1. Load an image using OpenCV.  
@@ -105,9 +113,9 @@
 3. Apply a low-pass filter to remove high-frequency noise.  
 4. Convert the image back to the spatial domain and display the filtered image.
 
-**Assignment 12: Hough Circle Transform for Circle Detection**
+# Assignment 12: Hough Circle Transform for Circle Detection
 
-**Description:** Detect circles in an image using the Hough Circle Transform.  
+### **Description:** Detect circles in an image using the Hough Circle Transform.  
 **Problem:**
 
 1. Load an image with circular shapes.  
@@ -115,9 +123,9 @@
 3. Draw the detected circles on the original image.  
 4. Display the original image with the detected circles.
 
-**Assignment 13: Pixel Classification Using Local Thresholding**
+# Assignment 13: Pixel Classification Using Local Thresholding
 
-**Description:** Perform pixel classification using local thresholding.  
+### **Description:** Perform pixel classification using local thresholding.  
 **Problem:**
 
 1. Load a grayscale image using OpenCV.  
